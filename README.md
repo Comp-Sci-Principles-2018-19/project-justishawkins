@@ -1,5 +1,8 @@
 # Project Name:
 
+## Problem
+Describe the problem that your project seeks to solve
+
 ## Big Fat Idea
 Write your "Big Fat Idea" here. 
 
