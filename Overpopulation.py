@@ -23,11 +23,20 @@ def test_suite():
     """
     test(growthrate(1,1,1) == 0)
     test(growthrate(1000,500,10) == 50)
+    test(growthrate(50,100,1) == -50)
+    test(growthrate(50,50,1) == 0)
+    test(growthrate(200,100,1) == 100)
+    test(growthrate(300,200,1) == 100)
+    test(growthrate(300,200,2) == 50)
+    test(growthrate(80,40,2) == 20)
+    test(growthrate(100,300,-2) == 100)
+    test(growthrate(500,100,-1) == -400)
 
 test_suite()
 
-cur_pop=input("What is the current population")
-prev_pop=input(growthrate)
+cur_pop=int(input("What is the current population"))
+prev_pop=int(input("What is the previous population"))
 
-test(growthrate(1,1,1) == 0)
-test(input(100,50,5) == 10)
+years=int(input("How many years"))
+print(growthrate(cur_pop, prev_pop, years))
+
